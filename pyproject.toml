@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "termpdf-py"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "termpdf"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pymupdf = "^1.21.1"
+pdfrw = "^0.4"
+pyperclip = "^1.8.2"
+pybtex = "^0.24.0"
+pynvim = "^0.4.3"
+roman = "^3.3"
+pagelabels = "^1.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
