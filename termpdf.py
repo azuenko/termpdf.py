@@ -665,6 +665,11 @@ class Document(fitz.Document):
                 # pix.tint_with(red, blue, green)
                 # tinting disabled due to unresolved bug
 
+            if (tint_black := os.environ.get('TINT_BLACK')) \
+            and (tint_white := os.environ.get('TINT_WHITE')):
+                # pix.tint_with(0X001F2B, 0xFFFFFF)
+                pix.tint_with(int(tint_black, 0), int(tint_white, 0))
+
             # build cmd to send to kitty
             cmd = {'i': p + 1, 't': 'd', 's': pix.width, 'v': pix.height}
 
