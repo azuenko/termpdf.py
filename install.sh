@@ -1,3 +1,5 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-poetry install
+( cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+    poetry install
+)

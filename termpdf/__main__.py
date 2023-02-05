@@ -1860,6 +1860,6 @@ def main(args=sys.argv):
 
 if __name__ == '__main__':
     #logging.basicConfig(filename='termpdf.log',level=logging.DEBUG)
-    logging.basicConfig(filename='termpdf.log',level=logging.WARNING)
+    # logging.basicConfig(filename='termpdf.log',level=logging.WARNING)
     main()
 
