@@ -1059,7 +1059,7 @@ class shortcuts:
         self.TOGGLE_AUTOCROP  = [ord('c')]
         self.TOGGLE_ALPHA     = [ord('A')]
         self.TOGGLE_INVERT    = [ord('i')]
-        # self.TOGGLE_TINT      = [ord('d')]
+        self.TOGGLE_TINT      = [ord('/')]
         self.SET_PAGE_LABEL   = [ord('P')]
         self.SET_PAGE_ALT     = [ord('I')]
         self.INC_FONT         = [ord('=')]
