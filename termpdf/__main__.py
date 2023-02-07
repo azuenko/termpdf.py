@@ -1529,6 +1529,7 @@ def view(file_change,doc):
         key = scr.stdscr.getch()
         while key == -1 and not file_change.is_set():
             key = scr.stdscr.getch()
+            sleep(.05)
         scr.stdscr.nodelay(False)
 
         if file_change.is_set():
